@@ -5,60 +5,46 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <style>
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
-        @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans&display=swap');
+        @import url('//fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans&display=swap');
 
         <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 
         body { margin: 0; padding: 0; }
         html { height: 100%; cursor: default; }
         body {
-            font-family: 'Open Sans', sans-serif;
-            width: 100%; height: 100%;
+            font-family: Open Sans, sans-serif;
+            width: 90%; height: 55%;
             text-align: center;
             display: table;
             opacity: 1;
             animation: fadein 3s forwards;
         }
-        h2 {
-            font-family: font-family: 'Fugaz One', cursive;
+        h1 {
+            font-size: 30px;
             font-weight: 300;
-            margin-bottom: 25px;
+            font-family: Fugaz One, cursive;
+            color:#FF2F00;
+            }
+        h2 {
+          font-family: Open Sans, sans-serif;
+          font-size: 17px;
+          line-height: 17px;
+          color: #333;
         }
         img {
+            margin-top: 3%;
             width: 25%; /* Image width */
             border: 0; /* For IE */
         }
         #main {
             vertical-align: middle;
             display: table-cell;
-        }
-        /* Progress bar */
-        #progress {
-            width: 45%; /* Bar width */
-            margin: 0 auto;
-            border-radius: 10px; /* Roundness */
-            background-color: #a8a8a8; /* Background colour */
-            padding: 7px 5px;
-            /* border: 5px solid #a8a8a8; Border */
-        }
-        #fill {
-            padding: 2px 0;
-            background-color: #00b98b; /* Fill colour */
-            width: 35%; /* Bar percentage, change text below also */
-            border-radius: 25px; /* Roundness */
-            animation: proanimate 2s;
-        }
-        #barpercent h3 {
-            color: white; /* Bar percentage text colour */
-            margin: 0; padding: 0;
-            opacity: 1;
-            animation: fadein 3s forwards;
         }
 
         /* Fades in animation */
@@ -70,42 +56,84 @@
             from { width: 0%; }
         }
 
+                /* Mailchimp */
+        #mailchimp h1 {
+            font-size: 30px;
+            font-weight: 300;
+            font-family: Fugaz One, cursive;
+            color:#FF2F00;
+        }
+
+        #mailchimp p {
+          font-family: Open Sans, sans-serif;
+          font-size: 17px;
+          line-height: 17px;
+          color: #333;
+        }
+
+        #mailchimp input {
+         border: medium none;
+         color: gray;
+         font-size: 14px;
+         border: 1px solid #dfdfdf;
+         margin-bottom: 10px;
+         padding: 8px 10px;
+         width: 25%;
+         border-radius: 4px;
+         -moz-border-radius: 4x;
+         -webkit-border-radius: 4px;
+        }
+
+        #mailchimp input.email { background: #fff }
+        #mailchimp input.name { background: #fff}
+        #mailchimp input[type="submit"] {
+         background: #FF2F00;
+         color: #fff;
+         cursor: pointer;
+         font-size: 15px;
+         text-transform: uppercase;
+         width: 25%;
+         padding: 8px 0;
+        }
+
+        ::-webkit-input-placeholder {
+           color: gray;
+        }
+
         @media screen and (max-width:600px) {
             img {
-                width: 60%;
+                width: 50%;
+                margin-top: 10%;
             }
-            h1 {
-                font-size: 1.3em;
-            }
-            h2 {
-                margin: 1.1em;
-                font-size: 1.1em;
-            }
-            #progress {
-                width: 80%; /* Bar width */
-            }
+
+            #mailchimp input[type="submit"] {
+                 width: 25%;
+                }
+
+            #mailchimp input {
+                 width: 45%;
+                }
         }
     </style>
-    <title>Coming Soon</title>
+    <title>Chilies! Spices and Ingredients delivery</title>
 </head>
 <body>
     <div id="main">
         <img src="https://raw.githubusercontent.com/johan855/chilies/master/logo.png" alt="Logo Image">
-        <h1>Chilies</h1>
+        <h1>Chilies!</h1>
         <h2>Spices and ingredients delivery in under 15 minutes!</h2>
-        <div id="progress"><div id="fill"><div id="barpercent"><h3>35%</h3></div></div></div>
-        <!--Formsping start-->
-        <form action="https://formspree.io/f/xbjpqvkk" method="POST">
-          <label>Your email here
-              <input type="email" name="_replyto">
-          </label>
-          <button type="submit">Get notified</button>
-        </form>
-        <!--Formsping end!-->
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mailchimp">
+            <form id="mc-embedded-subscribe-form" class="validate" action="https://app.us7.list-manage.com/subscribe/post?u=99b6ec1b2ba55f18de4f9d1cc&amp;id=d598e09bc7" method="post" name="mc-embedded-subscribe-form" target="_blank">
+                <h1>Get notified</h1>
+                <p>We will only send you 2 emails in total: One with a quick survey and a last one letting you know when we are ready to launch!</p>
+                <input id="mce-EMAIL" class="required email" name="EMAIL" size="30" type="email" value="" placeholder="Enter your email" />
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_99b6ec1b2ba55f18de4f9d1cc_d598e09bc7" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
     </div>
-
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
-
 </body>
 </html>
